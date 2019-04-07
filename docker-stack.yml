@@ -52,13 +52,13 @@ services:
 configs:
 
   elastic_config:
-    file: /mnt/data/docker/logstash/elasticsearch/config/elasticsearch.yml
+    file: /mnt/data/docker/docker-elk/elasticsearch/config/elasticsearch.yml
   logstash_config:
-    file: /mnt/data/docker/logstash/logstash/config/logstash.yml
+    file: /mnt/data/docker/docker-elk/logstash/config/logstash.yml
   logstash_pipeline:
-    file: /mnt/data/docker/logstash/logstash/pipeline/logstash.conf
+    file: /mnt/data/docker/docker-elk/logstash/pipeline/logstash.conf
   kibana_config:
-    file: /mnt/data/docker/logstash/kibana/config/kibana.yml
+    file: /mnt/data/docker/docker-elk/kibana/config/kibana.yml
 
 networks:
   elk:
